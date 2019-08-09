@@ -51,8 +51,8 @@ public class Main {
 
         } else if (a == 2) {
             ZodiacoLogica zodiacoLogica = new ZodiacoLogica();
-            zodiacoLogica.setMes(Integer.parseInt(JOptionPane.showInputDialog(null,"1:enero?"+"\n"+
-                    "3:febrero"+"\n"+"4:marzo"+"\n"+"5:abril"+"\n"+"6:junio"+"\n"+"7:julio"+"\n"+"8:agosto"+"\n"+"9:septiembre"+"\n"+
+            zodiacoLogica.setMes(Integer.parseInt(JOptionPane.showInputDialog(null,"1:enero"+"\n"+
+                    "2:febrero"+"\n"+"3:marzo"+"\n"+"4:abril"+"\n"+"5:maryo"+"\n"+"6:junio"+"\n"+"7:julio"+"\n"+"8:agosto"+"\n"+"9:septiembre"+"\n"+
                     "10:octubre"+"\n"+"11:noviembre"+"\n"+"12:diciembre")));
             zodiacoLogica.setDia(Integer.parseInt(JOptionPane.showInputDialog(null,"en que dia nacistes?")));
             zodiacoLogica.zodiacos();

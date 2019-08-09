@@ -2,11 +2,14 @@ package calcular;
 
 import javax.swing.*;
 
+
+import static constantes.ConstanteMain.*;
+
 public class VectorLogica extends Vector {
 
 
     public void vectores() {
-        this.setCantidad(Integer.parseInt(JOptionPane.showInputDialog(null,"cuantos numers deseas ingresar?")));
+        this.setCantidad(Integer.parseInt(JOptionPane.showInputDialog(null,VEC5.getCc())));
 
         int contadorN = 1;
         int contadorP = 1;
@@ -15,7 +18,7 @@ public class VectorLogica extends Vector {
         int[] positivo = new int[this.getCantidad()];
         int[] negativo = new int[this.getCantidad()];
         for (int i = 0; i < this.getCantidad(); i++) {
-            this.setPos(Integer.parseInt(JOptionPane.showInputDialog(null,"ingrese el valor")));
+            this.setPos(Integer.parseInt(JOptionPane.showInputDialog(null, VEC4.getCc())));
             if (this.getPos() > 0) {
                 positivo[i] = this.getPos();
                 negativo[i]=0;
@@ -31,7 +34,7 @@ public class VectorLogica extends Vector {
 
         }
 
-        JOptionPane.showMessageDialog(null, "cantidad de datos ingresados" + this.getCantidad() + "\n" +
-                "promedio de numeros positivos : "+promedioPos/(contadorP-1)+"\n"+"promedio de numeros negativos : "+promedioNeg/(contadorN-1));
+        JOptionPane.showMessageDialog(null, VEC1.getCc() + this.getCantidad() + "\n" +
+                VEC2+promedioPos/(contadorP-1)+"\n"+VEC3.getCc()+promedioNeg/(contadorN-1));
     }
 }

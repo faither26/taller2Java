@@ -1,116 +1,52 @@
 package calcular;
 
+import constantes.ConstanteMain.*;
+
 import javax.swing.*;
 
-public class ZodiacoLogica extends Zodiaco {
+import static constantes.ConstanteMain.*;
+
+public class ZodiacoLogica extends ZodiacoMetodo {
     public void zodiacos() {
+
         switch (this.getMes()) {
             case 1:
-                if (this.getDia() <= 20) {
-                    JOptionPane.showMessageDialog(null, "su signo es : capricornio");
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : acuario");
-
-                }
+                this.zVeinte(Z1.getCc(),Z12.getCc(),20);
                 break;
             case 2:
-                if (this.getDia() <= 19) {
-                    JOptionPane.showMessageDialog(null, "su signo es : acuario");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : piscis");
-
-                }
+                this.zVeinte(Z12.getCc(),Z2.getCc(),19);
                 break;
             case 3:
-                if (this.getDia() <= 20) {
-                    JOptionPane.showMessageDialog(null, "su signo es : piscis");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : aries");
-
-                }
+                this.zVeinte(Z2.getCc(),Z3.getCc(),20);
                 break;
             case 4:
-                if (this.getDia() <= 20) {
-                    JOptionPane.showMessageDialog(null, "su signo es : aries");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : taurp");
-
-                }
+                this.zVeinte(Z3.getCc(),Z4.getCc(),20);
                 break;
             case 5:
-                if (this.getDia() <= 21) {
-                    JOptionPane.showMessageDialog(null, "su signo es : tauro");
+                this.zVeinte(Z4.getCc(),Z5.getCc(),21);
 
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : géminis");
 
-                }
                 break;
             case 6:
-                if (this.getDia() <= 21) {
-                    JOptionPane.showMessageDialog(null, "su signo es : géminis");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : cáncer");
-
-                }
+                this.zVeinte(Z5.getCc(),Z6.getCc(),21);
                 break;
             case 7:
-                if (this.getDia() <= 23) {
-                    JOptionPane.showMessageDialog(null, "su signo es : cáncer");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : leo");
-
-                }
+                this.zVeinte(Z6.getCc(),Z7.getCc(),23);
                 break;
             case 8:
-                if (this.getDia() <= 23) {
-                    JOptionPane.showMessageDialog(null, "su signo es : leo");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : virgo");
-
-                }
+                this.zVeinte(Z7.getCc(),Z8.getCc(),23);
                 break;
             case 9:
-                if (this.getDia() <= 23) {
-                    JOptionPane.showMessageDialog(null, "su signo es : virgp");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : libra");
-
-                }
+                this.zVeinte(Z8.getCc(),Z9.getCc(),23);
                 break;
             case 10:
-                if (this.getDia() <= 23) {
-                    JOptionPane.showMessageDialog(null, "su signo es : acuario");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : escorpio");
-
-                }
+                this.zVeinte(Z9.getCc(),Z10.getCc(),23);
                 break;
             case 11:
-                if (this.getDia() <= 22) {
-                    JOptionPane.showMessageDialog(null, "su signo es : escorpio");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : sagitario");
-
-                }
+                this.zVeinte(Z10.getCc(),Z11.getCc(),22);
                 break;
             case 12:
-                if (this.getDia() <= 18) {
-                    JOptionPane.showMessageDialog(null, "su signo es : sagitario");
-
-                } else {
-                    JOptionPane.showMessageDialog(null, "su signo es : capricornio");
-
-                }
+                this.zVeinte(Z11.getCc(),Z1.getCc(),18);
                 break;
             default:
         }
