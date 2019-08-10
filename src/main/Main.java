@@ -51,10 +51,10 @@ public class Main {
 
         } else if (a == 2) {
             ZodiacoLogica zodiacoLogica = new ZodiacoLogica();
-            zodiacoLogica.setMes(Integer.parseInt(JOptionPane.showInputDialog(null,"1:enero"+"\n"+
-                    "2:febrero"+"\n"+"3:marzo"+"\n"+"4:abril"+"\n"+"5:maryo"+"\n"+"6:junio"+"\n"+"7:julio"+"\n"+"8:agosto"+"\n"+"9:septiembre"+"\n"+
-                    "10:octubre"+"\n"+"11:noviembre"+"\n"+"12:diciembre")));
-            zodiacoLogica.setDia(Integer.parseInt(JOptionPane.showInputDialog(null,"en que dia nacistes?")));
+            zodiacoLogica.setMes(Integer.parseInt(JOptionPane.showInputDialog(null,M1.getCc()+"\n"+
+                    M2.getCc()+"\n"+M3.getCc()+"\n"+M4.getCc()+"\n"+M5.getCc()+"\n"+M6.getCc()+"\n"+M7.getCc()+"\n"+M8.getCc()+"\n"+M9.getCc()+"\n"+
+                    M10.getCc()+"\n"+M11.getCc()+"\n"+M12.getCc())));
+            zodiacoLogica.setDia(Integer.parseInt(JOptionPane.showInputDialog(null,MM.getCc())));
             zodiacoLogica.zodiacos();
         } else if (a == 3) {
             SalarioLogica salarioLogica = new SalarioLogica();

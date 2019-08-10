@@ -34,7 +34,21 @@ public enum ConstanteMain {
     Z9("libra"),
     Z10("escorpio"),
     Z11("sagitario"),
-    Z12("acuario");
+    Z12("acuario"),
+    M1("1:ENERO"),
+    M2("2:FEBRERO"),
+    M3("3:MARZO"),
+    M4("4:ABRIL"),
+    M5("5:MAYO"),
+    M6("6:JUNIO"),
+    M7("7:JULIO"),
+    M8("8:AGOSTO"),
+    M9("9:SEPTIEMBRE"),
+    M10("10:OCTUBRE"),
+    M11("11:NOVIEMBRE"),
+    M12("12:DICIEMB"),MM("En que dia nacistes?"),
+    SS("desea ingreasr un salario?"),SS1("salario que deseas ingresar"),SS2("el salario mayor es :" ),
+    SS3("el salario acumulado es :"),SS4("el salario promedio es :"),SS5("total de salarios ingresados");
 
     private String cc;
 

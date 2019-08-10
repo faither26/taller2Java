@@ -19,3 +19,7 @@ N
 src/calcular/VectorLogica.java,f\b\fbfe411df7980a89842854b79635715cb60a6b79
 H
 src/calcular/Vector.java,6\e\6ebad5b872a1e02c8fc8ffd5407800037cd06cba
+O
+src/calcular/ZodiacoMetodo.java,5\1\51a67bbc15811a40334f142535e069188ebc11d3
+R
+"src/constantes/ConstantesDias.java,4\f\4f7d7e8a81d35cab3cb9b6af16f6afc7529dbe24

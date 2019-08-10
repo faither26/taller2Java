@@ -1,5 +1,8 @@
 package calcular;
 
+
+import static constantes.ConstanteMain.*;
+
 import javax.swing.*;
 
 public class SalarioLogica extends Salarios {
@@ -13,7 +16,7 @@ public class SalarioLogica extends Salarios {
 
 
         do {
-         opcion =JOptionPane.showConfirmDialog(null,"desea ingreasr un salario?","mensage",
+         opcion =JOptionPane.showConfirmDialog(null, SS.getCc(),"",
                 JOptionPane.YES_NO_OPTION);
 
 
@@ -22,7 +25,7 @@ public class SalarioLogica extends Salarios {
             if (opcion==0) {
 
 
-                int salario = Integer.parseInt(JOptionPane.showInputDialog(null, "salario que deseas ingresar"));
+                int salario = Integer.parseInt(JOptionPane.showInputDialog(null, SS1.getCc()));
 
                 if (salario > this.getMayor()) {
                     this.setMayor(salario);
@@ -36,8 +39,8 @@ public class SalarioLogica extends Salarios {
             }
         }while (!a);
 
-        JOptionPane.showMessageDialog(null, "el salario mayor es :" + this.getMayor() + "\n" +
-              "el salario acumulado es :"+acum+"\n"+"el salario promedio es :"+(acum/(numeross-1))+"\n"+"total de salarios ingresados"+(numeross-1));
+        JOptionPane.showMessageDialog(null, SS2.getCc()+ this.getMayor() + "\n" +
+              SS3.getCc()+acum+"\n"+SS4.getCc()+(acum/(numeross-1))+"\n"+SS5.getCc()+(numeross-1));
     }
 
 
